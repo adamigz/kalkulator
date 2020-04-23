@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="document.getElementById('f').focus()">
+    <center>
+    <div id="wynik">
+        <p id="pole"></p>
+    </div>
+    <div class="buttons">
+        <button onclick="pisz('7')" id="siedem" class="button">7</button><button onclick="pisz('8')" class="button">8</button><button onclick="pisz('9')" class="button">9</button><button onclick="pisz('-')" class="button">-</button><button onclick="usun()" class="button">AC</button><br>
+        <button onclick="pisz('4')" class="button">4</button><button onclick="pisz('5')" class="button">5</button><button onclick="pisz('6')" class="button">6</button><button onclick="pisz('*')" class="button">*</button><br>
+        <button onclick="pisz('1')" class="button">1</button><button onclick="pisz('2')" class="button">2</button><button onclick="pisz('3')" class="button">3</button><button onclick="pisz('/')" class="button">/</button><br>
+        <button onclick="pisz('0')" id="null" class="button">0</button><button onclick="pisz('+')" class="button">+</button><button onclick="licz()" class="button">=</button><br>
+    </div>
+    </center>
+    <input type="text" id="f" onkeyup="klaw()">
+</body>
+</html>
